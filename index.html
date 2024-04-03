@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #inputField {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        #displayArea {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- html content -->
+    <input type="text" id="inputField" placeholder="Enter Text...">
+    <button onclick="displayText()">Display</button>
+    <div id="displayArea"></div>
+
+    <!-- script -->
+    <script>
+        function displayText() {
+            // get the input
+            var inputText = document.getElementById("inputField").value;
+
+            // get the display area
+            var displayArea = document.getElementById("displayArea");
+
+            // display the input value
+            displayArea.innerText = inputText;
+        }
+    </script>
+</body>
+</html>
